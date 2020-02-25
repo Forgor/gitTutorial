@@ -1,2 +1,2 @@
 
-This is an readme filesddscsdcsd to teasdadasdasst git function.
+These files are used to record some notes about the git.
