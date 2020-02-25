@@ -9,3 +9,13 @@ git可以查看有哪些文件是已经提交的部分。
 查看文件状态
 
 `git status`
+
+恢复暂存区域,撤销最近一次提交
+
+` git reset HEAD`
+
+暂存区域文件反覆盖文件
+
+`git checkout -- filename`
+
+### 查看历史提交 ###
