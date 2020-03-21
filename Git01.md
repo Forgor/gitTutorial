@@ -44,6 +44,23 @@ Git管理的文件有三种状态
 + 已提交（committed)
 
 
+<<<<<<< HEAD
+=======
+### Git操作 ###
+
+1.  在需要的路径下初始化git仓库  
+
+	`git init`
+
+2. 添加文件至暂存区域
+
+	`git add readme.md`
+
+3. 提交文件至文件仓库, -m 选项表示是说明
+
+	`git commit -m "add an readme file"`
+
+>>>>>>> 9564796da28bcd5794606831f91f0b3aa8134ae4
 
 
 ```
