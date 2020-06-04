@@ -16,3 +16,9 @@
 2. Click the operatoion you want to do
 
 
+#### how to preview the MD file in the VScode
+
+WAY1 : Ctrl + Shift + P ---> input preview  ---> select the first one
+WAY2 : Ctri + Shift + v
+
+
