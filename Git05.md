@@ -28,6 +28,8 @@ This is the Git part4 learning note
 `git rm -f test.py` 强制删除test.py文件
 `git re --cached test.py` 删除暂存区的test.py文件
 
+`git add -u` 你可以运行 git add -u 将所有改动的文件提交到暂存区，这样之后你无需使用 git rm name 命令，只需提交
+
 git rm命令只是删除工作目录和暂存区域的文件，也就是取消跟踪，在下次提交时不纳入版本管理
 
 ### 情景三 ###
