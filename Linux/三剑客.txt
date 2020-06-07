@@ -1,0 +1,114 @@
+Linux 三剑客学习
+
+一、awk命令学习
+awk 语言用于文本处理以及报表生成，主要是一行一行处理文本
+
+先举几个栗子
+1. awk '{print $0}' /etc/passwd  打印passwd中的全部数据
+2. $ echo hhh|awk '{print "hello world"}'   打印hello world
+3. awk '{print "hiya"}' /etc/passwd  打印passwd行条 hiya
+
+
+awk格式
+	awk [-F|-f|-v] 'BEGIN{}//{command1；command2}END{}' file
+
+
+awk -F   参数指定分隔符号类型
+awk -f   调用脚本
+awk -v   定义变量
+' '      表示引用代码块
+BEGIN    初始化代码块  主要是引用全局变量，设置FS分隔符号等
+//       匹配代码块，主要是字符串或者正则表达式
+{}       命令代码块  包含一条或者多条命令
+;        多条命令分隔符
+END      结尾代码块  最后执行主要是主要是最终计算或者输出结尾摘要信息
+NF       Field number 字段数量
+NR       Record number 记录数量
+OFS      输出字段分隔符，默认是分隔符
+ORS      输出记录分隔符，默认是换行符号
+
+实例
+1.  awk -F : '{print $1,$2,$2}' OFS='\t' /etc/passwd  以制表符号为分隔符输出数据 
+2.  awk -F : '{print $1;print $2}' /etc/passwd   输出每一行记录的前两个字段，每个字段一行
+3.  awk 'BEGIN{x=0} /^$/{x+=1}END{print"I find ",x,"blank lines"}' 1.txt  查询一个文件中的空行数
+4.  ls -l|awk 'BEGIN{sum=0} !/^d/ {sum+=$5} END{print"total size is",sum}'  查看查询的文件总和
+5.  ls -l|awk '{print $5}' txt|echo $[$(tr '\n' '+')0]   计算ls -l导出后的文件总和
+6.  awk -f script.awk  执行脚本 
+7.  awk -F : 'NF==7{print}' /etc/passwd   显示字段数量为7的记录
+8.  awk -F : 'NF>7{print}' /etc/passwd   显示字段数量为大于7的记录
+9.  awk -F : 'NR==36{print}' /etc/passwd  显示具体某一行的记录
+10. route -n|awk 'NR!=1{print}'   不打印数据的第一行
+11. awk '/huang/,/rpc/' /etc/passwd  区间匹配
+12. awk '/huang|rpc/' /etc/passwd   匹配huang或者rpc
+13. awk -F : '$1~/h/' /etc/passwd    $1匹配指定内容才能显示
+14. IF语句   awk -F : '{if($1~/huang/){print $1} else {print $2}}' /etc/passwd
+			 awk -F : '{$1~/huang/{print $1} else {print $2}}' /etc/passwd
+15. 条件表达式  awk -F : '{if($3>500) {print $3} else {print $1}}' /etc/passwd
+16. 输出分隔符号  awk -F : '$1~/h/{print $1,$2}' OFS='---' /etc/passwd
+17. 输出内容至文件   awk -F : '$1~/h/{print $1,$2>"./fs"}' OFS='---' /etc/passwd
+18. 格式化输出  netstat -an|awk '{printf "%-8s %-10s\n",$1,$2}' 
+19. IF语句：awk -F: '{print ($3>100 ? $3":\tyes":$3":\tno")}'  /etc/passwd
+20. WHILE语句：awk -F: 'BEGIN{i=1} {while(i<NF) print NF,$i,i++}' /etc/passwd 
+ 
+ 
+ 
+ 
+ 
+sed 命令代码块
+
+
+-n  表示取消默认打印操作  -n 和 p一起使用打印选定的内容
+
+
+p  打印
+d  删除
+s  替换
+
+特殊符号
+1. $ 行尾定位符  /love$/  匹配所有以love结尾的行
+2. ^ 行首定位符  /^love/  匹配所有以love开头的行
+3. & 查找替换串  s/love/**&**/  将love替换为**love**
+4. \< 词首定位符  /\<love/  匹配包含love开头单词的行 
+5. \> 词尾定位符  /love/\>  匹配包含love结尾单词的行
+
+
+1. 删除   sed '3d' cs.txt  或者  sed '3,$d' cs.txt  或者  sed '/north/d' cs.txt
+2. 替换    sed 's/tom/jerry/g' cs.txt  
+3. &符号   sed 's/[0-9][0-9]$/&.5/' cs.txt
+4. 指定位替换   sed  's/\(He\)llo/\1happy \1/p' cs.txt
+5. 指定开始结束逗号分开   sed -n '/tom/,/He/p' cs.txt  sed
+6. 指定符号结尾   sed '/tom/,/He/s/$/---###---/' cs.txt
+7. 多重编辑 -e命令  sed -e '1,3d' -e 's/huang/gugu/g' b.txt
+8. 追加命令  sed '/huang/a hello world!' b.txt·  a--行后  i--行前  c--替换该行
+9. n命令     sed '/huang/{n;s/gugu/hello world!/g;}' b.txt  匹配huang的下一行并替换 gugu
+10. y替换命令   sed 'y/huang/HUANG/' b.txt   
+
+
+实际应用
+1. 删除行首多余空格  sed 's/^[ ]*//' c.txt
+2. 
+
+
+
+
+grep 命令
+
+grep全局查找正则表达式并打印结果的命令
+
+grep选项
+-E 匹配模式是正则表达式
+-i 忽略大小写
+-w 表达式作为词来查找
+-x 匹配到得内容正好是一个整行
+-c 统计行数
+-m 只统计规定的行数
+-n 输出的结果里显示行号 在原始文件中的行数
+-R 递归匹配
+
+ls | egrep 'app|test'
+
+
+
+
+
+

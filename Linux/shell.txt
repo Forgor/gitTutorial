@@ -1,0 +1,23 @@
+1.利用shell while循环读取参数并执行命令
+cat file.txt| (while read arg; do cat $car; done)
+
+2.所有file*文件名称前面添加换行符号输出
+-I 选项用于指定替换字符串
+cat args.txt| xargs -I {} ./test.sh number:{}
+find . -name "file*"|xargs -I ^ sh -c "echo -ne '\n ^; grep main ^"  --未编译成功
+
+2.8 用tr进行转化
+
+1.将字符串大写转换为小写
+echo 'HELLO WORLD'|tr 'A-Z' 'a-z'
+2.使用-d选项删除指定字符
+tr -d '0-9'
+3. tr -c选项
+	tr -c [set1]  删除所有不在set1中的字符
+	tr -c [set1] [set2] 将set1中的字符用set2替换
+4. tr -s选项压缩字符
+echo "GNU is     not    UNIX，？      dd    。"|tr -s " "
+5. 文件中数字相加
+ cat 3.txt|echo $[ $(tr '\n' '+' ) ]
+
+$[ expression ] 执行算数运算
