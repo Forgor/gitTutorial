@@ -1,0 +1,871 @@
+    1  top
+    2  q
+    3  vi test
+    4  top
+    5  sleep 2; ls
+    6  ls
+    7  fdisk -l
+    8  du -a
+    9  du /home/haifeng
+   10  df
+   11  df -lh
+   12  ls
+   13  pwd
+   14  cd ttttt/
+   15  ls
+   16  du > f1
+   17  ls
+   18  ls -l
+   19  cay f1
+   20  cat f1
+   21  df
+   22  df -a
+   23  du -l
+   24  du -f
+   25  du -a
+   26  history 
+   27  df
+   28  du -a
+   29  history > f2
+   30  ls -l
+   31  vi + f2
+   32  vi +33 f2
+   33  cd ttttt/
+   34  vi f2
+   35  ls
+   36  ls -l
+   37  vi h2
+   38  ls
+   39  vi f2
+   40  ls
+   41  vi f2
+   42  exit
+   43  cd ttttt/
+   44  ls
+   45  vi + f2
+   46  clear
+   47  vi test
+   48  sh test
+   49  sh < test
+   50  sh -l
+   51  ls -l
+   52  test
+   53  chmod a + x test
+   54  chmod a+x test
+   55  test
+   56  ls -l
+   57  test
+   58  ./test
+   59  cp test /bin
+   60  test
+   61  cd ..
+   62  ./test
+   63  test
+   64  ls -l /bin
+   65  ls -d /bin
+   66  cd /bin
+   67  ls -l test
+   68  test
+   69  ./test
+   70  cd ..
+   71  test
+   72  cd /root/ttttt/
+   73  ls
+   74  ls -l
+   75  test
+   76  mv test test.sh
+   77  test.sh
+   78  ./test.sh
+   79  cp test.sh /bin
+   80  test.sh
+   81  cd ..
+   82  test.sh
+   83  top&
+   84  tasks
+   85  top
+   86  taks
+   87  tasks
+   88  task
+   89  tsjobs
+   90  jobs 
+   91  fg 1
+   92  fg 2
+   93  ls
+   94  jobs
+   95  last
+   96  lastlog
+   97  last
+   98  lastlog
+   99  cat /var/log
+  100  ls
+  101  pwd
+  102  cd /var
+  103  ls
+  104  cd log
+  105  ls
+  106  cat secure
+  107  cat secure|grep refuse
+  108  cat secure-20200412|grep refuse
+  109  cat secure-20200412
+  110  ping 47.103.41.229
+  111  finger
+  112  top
+  113  cat /etc/services|grep mysql
+  114  system - config - securitylevel
+  115  system-config-securitylevel
+  116  gcc
+  117  man gcc
+  118  cd /root
+  119  cd ttttt/
+  120  ls
+  121  mkdir gcc_tt
+  122  cd gcc_tt/
+  123  vi a.c
+  124  ls
+  125  gcc a.c
+  126  vi a.c
+  127  gcc a.c
+  128  vi a.c
+  129  gcc a.c
+  130  vi a.c
+  131  gcc a.c
+  132  cat a.c
+  133  vi a.c
+  134  gcc a.c
+  135  ls
+  136  ./a.out 
+  137  gcc -o a.c
+  138  ls -l
+  139  gcc -o a.c
+  140  cat a.c
+  141  ls
+  142  a.out
+  143  cat a.out
+  144  qqqq
+  145  :
+  146  clear
+  147  hllo
+  148  top
+  149  cat /etc/profile
+  150  car /home/haifeng/.bash_profile 
+  151  cat /home/haifeng/.bash_profile 
+  152  $MAIL
+  153  `PWD`
+  154  echo $PWD
+  155  $PWD
+  156  echo $CDPATH
+  157  echo $ENV
+  158  echo $HOME
+  159  echo $TERM
+  160  echo $PS1
+  161  echo $PS2
+  162  echo $PATH
+  163  pwd
+  164  cd ttttt/
+  165  ls
+  166  mkdir shell+te
+  167  ls
+  168  cd shell+te/
+  169  ls
+  170  echo $PS1>PS
+  171  ls
+  172  cat PS
+  173  PS1 = "[\u@@@\h \t]\#"
+  174  PS1 = "[\u@@@\h \t]#"
+  175  PS1 = "[\u@@@\h \h]*****"
+  176  $PS1
+  177  echo $PS1
+  178  PS1 = "hello"
+  179  chrome://settings/content/flash
+  180  $$
+  181  echo $$
+  182  echo Mydir
+  183  echo mydir
+  184  mydir=/home/haifeng
+  185  mydir
+  186  $mydir
+  187  echo $mydir
+  188  s1=ing
+  189  echo walk$s1 or runn$s1 or eat$s1
+  190  helli$s1
+  191  echo $s1c
+  192  echo $(s1)c
+  193  echo ${s1}c
+  194  path=\home\huang
+  195  echo my path is ${path}\name
+  196  path=hone/huang/
+  197  echo my path is ${path}m1.c
+  198  set
+  199  ls
+  200  cd /bin
+  201  ls
+  202  ls f*
+  203  ls f?
+  204  ls f[ai]n*
+  205  ls f[!i]n*
+  206  cd ttttt/
+  207  ls
+  208  cd gcc_tt/
+  209  ls
+  210  gcc -o a.c
+  211  cp a.c b.c
+  212  ls
+  213  gcc -o b.c
+  214  gcc -o hello b.c
+  215  ls
+  216  ./hello
+  217  gcc -v a.c
+  218  gcc -S a.c
+  219  ls
+  220  cat a.s
+  221  ./a.s
+  222  ls -l
+  223  ./a.out
+  224  javac
+  225  java
+  226  cd ttttt/
+  227  ls
+  228  cd shell+te/
+  229  ls
+  230  vi test1
+  231  ls
+  232  sh test1 haifeng
+  233  write root
+  234  ls
+  235  cat test1 
+  236  sh test1
+  237  who|grep root
+  238  if who|grep root; then echo "hello"
+  239  set
+  240  path = /home/haifeng
+  241  path = "/home/haifeng"
+  242  path="/home/haifeng"
+  243  echo "the path is $path "
+  244  echo "the path is `path`"
+  245  echo "the path is `path` "
+  246  echo `path`
+  247  path
+  248  $path
+  249  `path`
+  250  `path
+  251  `
+  252  echo "`path`"
+  253  echo `path`
+  254  dire="nihao"
+  255  echo "`nihao`"
+  256  echo "$nihao"
+  257  echo "`nihao"
+  258  `
+  259  echo "`nihao`"
+  260  nihao
+  261  echo nihao
+  262  set
+  263  nihao="hello"
+  264  set
+  265  echo "nihao"
+  266  echo "$nihao"
+  267  echo "¡¡¤nihao"
+  268  echo " `nihao` "
+  269  echo " $nihao "
+  270  cd ttttt/
+  271  cat test.sh 
+  272  ls -l
+  273  cd /home/haifeng
+  274  ls
+  275  cd test
+  276  ls
+  277  cd /root/ttttt/
+  278  cd shell+te/
+  279  cat test1 
+  280  if who|grep root; then echo "hello "; else echo "bye"; fi
+  281  sh test1
+  282  vi test1 
+  283  sh test1
+  284  cat test1
+  285  test
+  286  test -f test1
+  287  test
+  288  test --help
+  289  man test
+  290  ls
+  291  test -e test1
+  292  echo test -e test1
+  293  test -d test1
+  294  $?
+  295  if test -e test1; then echo "exists"; else echo "no exists"; fi
+  296  cd ttttt/
+  297  cd shell+te/
+  298  ls
+  299  f5445585972a 
+  300  pip install jieba -i https://pypi.tuna.tsinghua.edu.cn/simple
+  301  
+  302  x
+  303  xx
+  304  x
+  305  q
+  306  exit
+  307  cd
+  308  cdcd
+  309  cd ttttt//shell+te/
+  310  ls
+  311  vi test2
+  312  ls
+  313  sh test2 test1
+  314  vi test2
+  315  sh test2 test1
+  316  sh test2 file
+  317  sh test2 fir
+  318  sh test2 dir
+  319  ls
+  320  cat t*|pr
+  321  for name in $*; do     echo name; done
+  322  $*
+  323  echo $*
+  324  ls -r
+  325  cd ..
+  326  ls -R
+  327  cd shell+te/
+  328  vi test3
+  329  sh
+  330  sh test2
+  331  ls -l
+  332  sh test3
+  333  cd ..
+  334  ls
+  335  wget
+  336  ûwg
+  337  wget --help
+  338  java
+  339  find / name=java
+  340  find / -name java
+  341  cd /root/jdk1.8.0_231/bin
+  342  ls
+  343  cd ..
+  344  pwd
+  345  cat /etc/profile
+  346  cat /etc/profilejava
+  347  javac
+  348  echo $PATH
+  349  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.7.1-linux-x86_64.tar.gz
+  350  pwd
+  351  cd /root
+  352  ls
+  353  ll
+  354  cat /etc/passwd
+  355  groupadd es
+  356  useradd es -g es
+  357  passwd es
+  358  su - es
+  359  ls -l /home/es
+  360  vi /etc/profile
+  361  . /etc/profile
+  362  ls
+  363  su - es
+  364  vi /etc/profile
+  365  source /etc/profile
+  366  ls
+  367  su - es
+  368  echo $PATH
+  369  cp -r /root/jdk1.8.0_231 /home/es/
+  370  su - es
+  371  find / -name java
+  372  echo $PATH
+  373  vi /etc/profile
+  374  echo $PATH
+  375  source /etc/profile
+  376  vi /etc/profile
+  377  vi
+  378  vim /etc/profile
+  379  vi
+  380  cd /etc
+  381  vi profile
+  382  echo $PATH
+  383  java
+  384  javac
+  385  path
+  386  cat
+  387  find
+  388  export PATH=/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11R6/bin
+  389  vi profile
+  390  echo $PATH
+  391  . profile
+  392  vi
+  393  export PATH=/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11R6/bin
+  394  vi profile
+  395  . profile
+  396  vi
+  397  echo $PATH
+  398  su - es
+  399  ls
+  400  su - es
+  401  ls
+  402  su - es
+  403  vi /etc/profile
+  404  javac
+  405  source /etc/profile
+  406  echo $PATH
+  407  su - es
+  408  vi /etc/profile
+  409  javac
+  410  ./etc/profile
+  411  .\etc\profile
+  412  ls
+  413  source /etc/profile
+  414  javac
+  415  javac --version
+  416  echo $PATH
+  417  su - es
+  418  java --version
+  419  cd home/es
+  420  cd /home/es
+  421  ls
+  422  tar -zvf openjdk-11.0.1_linux-x64_bin.tar.gz 
+  423  tar
+  424  tar -xzf openjdk-11.0.1_linux-x64_bin.tar.gz 
+  425  ls -l
+  426  java -version
+  427  rm -r jdk-11.0..1
+  428  rm -r jdk-11.0.1
+  429  rm -rf jdk-11.0.1
+  430  ls
+  431  ls -l
+  432  su - es
+  433  ls
+  434  vi /etc/profile
+  435  echo $PATH
+  436  history 
+  437  source /etc/profile
+  438  ls
+  439  echo $PATH
+  440  java --version
+  441  javac --version
+  442  vi /etc/profile
+  443  su - es
+  444  find / --name java
+  445  find / -name java
+  446  vi /etc/profile
+  447  find / -name java
+  448  source /etc/profile
+  449  javac
+  450  java --vesion
+  451  java --version
+  452  echo $PATH
+  453  su - es
+  454  yum install java-11-openjdk.i686 :
+  455  java --version
+  456  rd
+  457  df
+  458  su - es
+  459  vi /etc/profile
+  460  history 
+  461  source /etc/profile
+  462  su -es
+  463  su es
+  464  curl http://localhost:9200
+  465  su - es
+  466  exit
+  467          ulimit -Hn
+  468          ulimit -Sn
+  469          ulimit -Hu
+  470          ulimit -Su 
+  471  su - es
+  472  curl https://localhost:9200
+  473  curl http://localhost:9200
+  474  pwd
+  475  cd /etc/security/limits.conf 
+  476  vi /etc/security/limits.conf 
+  477  vim /etc/security/limits.d/20-nproc.conf
+  478  cat /etc/security/limits.d/20-nproc.conf
+  479  vi /etc/sysctl.conf
+  480  sysctl -p
+  481  curl http://localhost:9200
+  482  cat  /home/es/elasticsearch-7.7.1/logs/elasticsearch.log
+  483  clear
+  484  vi jre/lib/i386/jvm.cfg
+  485  cd home/es/
+  486  cd /home/es
+  487  ls
+  488  cd jdk1.8.0_231/
+  489  vi jjre/lib/i386/jvm.cfg
+  490  ls
+  491  cd jre/lib/i386/jvm.cfg
+  492  vi jre/lib/i386/jvm.cfg
+  493  vi /etc/security/limits.conf
+  494  vi /etc/systemd/system.conf
+  495  reboot
+  496  cat /etc/fstab 
+  497  blkid
+  498  mkinitrd /boot/initramfs-$(uname -r).img $(uname -r) --force
+  499  reboot
+  500  exit
+  501  ry locking requested for elasticsearch process but memory is not locked
+  502  curl http://localhost:9200
+  503  su - es
+  504  passwd es
+  505  exit
+  506  ls
+  507  nginx
+  508  ls
+  509  nginx start
+  510  nginx --help
+  511  nginx -help
+  512  nginx -h
+  513  cd /home
+  514  ls
+  515  cd huang
+  516  ls
+  517  cd mysite_env/
+  518  ls
+  519  cd ..
+  520  cd Blog/
+  521  ls
+  522  cd..
+  523  ls
+  524  cat nginx_access.log 
+  525  cd .
+  526  cd ..
+  527  cd /etc/nginx/
+  528  ls
+  529  cat nginx.conf
+  530  nginx -reload
+  531  nginx --reload
+  532  nginx reload
+  533  nginx
+  534  nginx stop
+  535  nginx -s
+  536  netstat -ntlp
+  537  uwsgi --ini /home/huang/blog_uwsgi/mysite.ini uwsgi --stop /home/huang/blog_uwsgi/master.pid
+  538  service nginx stop
+  539  uwsgi --ini /home/huang/blog_uwsgi/mysite.ini uwsgi --stop /home/huang/blog_uwsgi/master.pid
+  540  service nginx restart
+  541  systemctl status nginx.service
+  542  nginx
+  543  netstat -ntlp
+  544  kill 2985
+  545  netstat -ntlp
+  546  kill 21015
+  547  kill 1015
+  548  systemctl status nginx.service
+  549  service nginx restart
+  550  netstat -nlp
+  551  netstat -ntlp
+  552  curl http://39.105.168.194:80
+  553  cat nginx.conf
+  554  curl http://127.0.0.1:8080
+  555  tenet 127.0.0.1
+  556  telnet 127.0.0.1
+  557  curl http://127.0.0.1:8080
+  558  cd /home/huang
+  559  ls
+  560  cd blog_uwsgi/
+  561  ls
+  562  cay mysite.ini 
+  563  cat mysite.ini 
+  564  cat mysite.log
+  565  tail -f mysite.log
+  566  cd /var/log/nginx/
+  567  ls
+  568  cd access.log
+  569  cat access.log
+  570  tail -f access.log
+  571  ls
+  572  tail -f error.log
+  573  cd /etc/nginx
+  574  cat nginx.conf
+  575  vi nginx.conf
+  576  cat nginx.conf
+  577  uwsgi --ini /home/huang/blog_uwsgi/mysite.ini uwsgi --stop /home/huang/blog_uwsgi/master.pid
+  578  ps -ef |grep uwsgi
+  579  kill 3155
+  580  kill 2957
+  581  ps -ef |grep uwsgi
+  582  ps
+  583  ps -ef
+  584  ps -ef|grep uwi
+  585  ps -ef |grep uwsgi
+  586  uwsgi
+  587  ps -ef |grep uwsgi
+  588  uwsgi --ini /home/huang/blog_uwsgi/mysite.ini
+  589  service start mysql
+  590  mysql -u root -p
+  591  mysql -u hhf -p
+  592  mysql -u root -h localhost -p
+  593  mysql -u root -p
+  594  mysql
+  595  mysqladmin -u root -p test password test123
+  596  mysql root@localhost
+  597  mysql -u root -h localhost
+  598  mysql -u root -h localhost -p
+  599  cd /home/es
+  600  rpm -ivh kibana-7.7.1-x86_64.rpm 
+  601  find / -name kibana.yml
+  602  vim /etc/kibana/kibana.yml
+  603  systemctl start kibana
+  604  systemctl status kibana
+  605  systemctl stop kibana
+  606  vim /etc/kibana/kibana.yml
+  607  systemctl status kibana
+  608  systemctl start kibana
+  609  systemctl sttus kibana
+  610  systemctl status kibana
+  611  systemctl restart kibana
+  612  cd /etc/kibana/
+  613  ls
+  614  cd /var/
+  615  cd log
+  616  ls
+  617  vi /etc/kibana/kibana.yml 
+  618  systemctl restart kibana
+  619  systemctl stop firewalld
+  620  systemctl status firewalld
+  621  netstat -nal
+  622  clear
+  623  systemctl status kibana
+  624  systemctl status kibana -l
+  625  systemctl status kibana
+  626  systemctl start kibana
+  627  systemctl status kibana
+  628  netstat -ntulp |grep 5601
+  629  netstat -ntulp
+  630  systemctl status kibana
+  631  netstat -ntulp
+  632  netstat -ntulp|grep kiban
+  633  netstat -ntulp|grep kibana
+  634  vi /etc/kibana/kibana.yml 
+  635  systemctl restart kibana
+  636  netstat -ntulp|grep kibana
+  637  netstat -ntulp
+  638  vi /etc/kibana/kibana.yml 
+  639  systemctl status kibana
+  640  systemctl status kibana -l
+  641  curl http://39.105.168.194:5601
+  642  curl http://39.105.168.194:9100
+  643  curl http://39.105.168.194:9200
+  644  systenctl enable kibana
+  645  systemctl enable kibana
+  646  systemctl start kibana
+  647  curl http://39.105.168.194:5601
+  648  history 
+  649  vi /etc/kibana/kibana.yml
+  650  systemctl restart kibana
+  651  systemctl status kibana
+  652  systemctl status kibana -l
+  653  netstat -ntulp|grep kibana
+  654  vi /etc/kibana/kibana.yml
+  655  systemctl status kibana -l
+  656  systemctl restart kibana
+  657  systemctl status kibana -l
+  658  netstat -ntulp|grep kibana
+  659  vi /etc/kibana/kibana.yml
+  660  systemctl restart kibana
+  661  netstat -ntulp|grep kibana
+  662  systemctl status kibana -l
+  663  history 
+  664  curl http://39.105.168.194:5601
+  665  vi /etc/kibana/kibana.yml
+  666  systemctl status kibana -l
+  667  systemctl restart kibana
+  668  systemctl status kibana -l
+  669  vi /etc/kibana/kibana.yml
+  670  systemctl restart kibana
+  671  netstat -ntpl|grep 5601
+  672  history 
+  673  netstat -ntulp|grep kibana
+  674  vi /var/log/kibana/kibana.stderr
+  675  find / --name kibana
+  676  find / -name kibana
+  677  vi /etc/kibana/kibana.yml
+  678  systemctl restart kibana
+  679  systemctl status kibana
+  680  systemctl start kibana
+  681  systemctl status kibana
+  682  netstat -ntulp|grep kibana
+  683  netstat -ntulp|grep 5601
+  684  systemctl firewalld kibana
+  685  systemctl status firewalld kibana
+  686  systemctl status kibana
+  687  systemctl start kibana
+  688  systemctl status kibana
+  689  systemctl start kibana
+  690  systemctl status kibana.service
+  691  yum uninstall rpm -qa | grep firefox
+  692  rpm -qa | grep kibana
+  693  rpm -e (rpm -qa | grep kibana)
+  694  rpm -e kibana-7.7.1-1.x86_64
+  695  rpm -qa | grep kibana
+  696  cd /home/es
+  697  rpm -ivh kibana-7.7.1-x86_64.rpm 
+  698  vi /etc/kibana/kibana.yml
+  699  systemctl start kibana
+  700  systemctl status kibana
+  701  systemctl status kibana -l
+  702  netstat -ntulp|grep kibana
+  703  netstat -ntulp
+  704  systemctl status kibana -l
+  705  systemctl status kibana 
+  706  vi /etc/kibana/kibana.yml
+  707  systemctl status kibana 
+  708  systemctl restart kibana 
+  709  systemctl status kibana 
+  710  systemctl stop kibana 
+  711  journalctl -fu kibana.service
+  712  sudo chmown es:es /usr/share/kibana/optimize/.babelcache.json
+  713  sudo chown es:es /usr/share/kibana/optimize/.babelcache.json
+  714  rpn -qa|grep kibana
+  715  rpm -qa|grep kibana
+  716  chown es:es kibana-7.7.1-x86_64.rpm 
+  717  chown es:es /var/lib/rpm/.rpm.lock
+  718  yum install kibana
+  719  systemctl status kibana
+  720  systemctl start kibana
+  721  systemctl status kibana
+  722  systemctl start kibana
+  723  systemctl status kibana
+  724  journalctl -fu kibana.service
+  725  journalctl kibana.service
+  726  journalctl -q kibana.service
+  727  journalctl -f kibana.service
+  728  journalctl -fu kibana.service
+  729  rpm -qa|grep kibana
+  730  systemctl status firewalld.service
+  731  firewall-cmd --list-services
+  732  systemctl start firewalld.service
+  733  firewall-cmd --list-services
+  734  firewall-cmd --zone=public --list-ports
+  735  firewall-cmd --add-service=kibana
+  736  firewall-cmd --permanent --add-service=kibana
+  737  firewall-cmd --reload
+  738  firewall-cmd --zone=public --list-ports
+  739  firewall-cmd --zone=public --add-port=5601/tcp --permanent 
+  740  firewall-cmd --reload
+  741  irewall-cmd --zone= public --query-port=5601/tcp
+  742  firewall-cmd --zone= public --query-port=5601/tcp
+  743  firewall-cmd --zone=public --list-ports
+  744  netstat -ntlp
+  745  netstat -ntlp|grep 5601
+  746  systemctl start kibana 
+  747  systemctl status kibana 
+  748  netstat -ntlp|grep 5601
+  749  netstat -ntlp
+  750  systemctl status kibana 
+  751  rpm -qa|grep kibana-7.7.1-x86_64.rpm 
+  752  rpm -qa|grep kibana
+  753  rpm -e kibana-7.7.1-x86_64
+  754  rpm -qa|grep kibana
+  755  rpm -e 
+  756  rpm -e kibana-7.7.1-1.x86_64
+  757  cd /etc/kibana/
+  758  ls
+  759  systemctl status firewalld.service
+  760  systemctl stop firewalld.service
+  761  netstat -natl
+  762  cd /home/es
+  763  rpm -ivh kibana-7.7.1-x86_64.rpm 
+  764  netstat -natl
+  765  find / -name kibana
+  766  cd /usr/share/bison/
+  767  ls
+  768  cd ..
+  769  cd bin
+  770  ls
+  771  cd kibana/
+  772  ls
+  773  cd bin/
+  774  ls
+  775  ./kibana
+  776  pwd
+  777  netstat -natl
+  778  chown es:es /usr/share/kibana/optimize/.babel_register_cache.json
+  779  curl http://localhost:5601
+  780  netstat -natl
+  781  systemctl status kibana
+  782  systemctl start kibana
+  783  systemctl status kibana
+  784  netstat -natl
+  785  systemctl status kibana
+  786  netstat -natl
+  787  systemctl status kibana
+  788  netstat -natl
+  789  .\kibana
+  790  ./kibana
+  791  ./kibana --allow-root
+  792  netstat -natl
+  793  netstat -natl|rep 5601
+  794  netstat -natl|grep 5601
+  795  curl http://localhost:5601
+  796  netstat -tunlp |grep 5601
+  797  systemctl stop kibana
+  798  netstat -tunlp |grep 5601
+  799  vi /etc/kibana/kibana.yml
+  800  curl http://localhost:5601
+  801  ./kibana --allow-root
+  802  vi /etc/kibana/kibana.yml
+  803  ./kibana --allow-root
+  804  curl http://localhost:5601
+  805  netstat -natl|grep 5601
+  806  netstat -natl|grep 9200
+  807  ./kibana --allow-root
+  808  systemctl start kibana 
+  809  systemctl status kibana 
+  810  ./kibana --allow-root
+  811  systemctl stop kibana 
+  812  vi /etc/kibana/kibana.yml
+  813  systemctl start kibana 
+  814  systemctl status kibana 
+  815  ./kibana --allow-root
+  816  systemctl stop kibana 
+  817  ./kibana --allow-root
+  818  curl http://172.17.56.78:9200/
+  819  vi /etc/kibana/kibana.yml
+  820  ./kibana --allow-root
+  821  curl http://172.17.56.78:9200/
+  822  systemctl status kibana 
+  823  vi /etc/kibana/kibana.yml
+  824  systemctl status kibana 
+  825  ./kibana --allow-root
+  826  vi /etc/kibana/kibana.yml
+  827  curl http://localhost:9200/
+  828  ./kibana --allow-root
+  829  rpm -qa|grep kibana
+  830  curl -s -X GET --user XXX  "localhost:9200/_license?pretty"
+  831  curl -s -X GET --user root  "localhost:9200/_license?pretty"
+  832  GET /_xpack
+  833  yum update
+  834  ./kibana --allow-root
+  835  rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+  836  ./kibana --allow-root
+  837  rpm -qa|grep kibana
+  838  rpm -e kibana-7.7.1-1.x86_64
+  839  cd /etc/yum.repos.d/
+  840  ls
+  841  vi kibana.repo
+  842  yum install kibana
+  843  vi kibana.repo
+  844  yum install kibana
+  845  su - es
+  846  netstat -tunlp |grep 5601
+  847  systemctl start kibana
+  848  ps -ef|grep kibana
+  849  kill -9 6049
+  850  ps -ef
+  851  ps -ef|grep kiba
+  852  ps -ef|grep 5061
+  853  su -es
+  854  su - es
+  855  systemctl status kibana
+  856  systemctl daemon-reload
+  857  systemctl status kibana
+  858  systemctl status kibana -l
+  859  su - es
+  860  curl http://localhost:9200
+  861  curl http://localhost:5601
+  862  curl  -H "Content-Type: application/json" -XGET "http://localhost:9200/_xpack?pretty"
+  863  curl http://localhost:5601
+  864  netstat -nutl
+  865  curl http://127.0.0.1:5601
+  866  curl http://localhost:5601
+  867  curl http://localhost:9200
+  868  netstat -nutl
+  869  firewall-cmd --state
+  870  history 
+  871  history >kibana.log
